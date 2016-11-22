@@ -13,7 +13,7 @@ public class CardDispatcher {
 		//印出來參考檢查用
 //		for(int i: cardPile){
 //			System.out.println("non repeat :" +i);
-//		}
+//		}ddd
 	}
 	 
 	 
