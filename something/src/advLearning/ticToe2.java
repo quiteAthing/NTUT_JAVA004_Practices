@@ -31,7 +31,7 @@ public class ticToe2 {
 			try {
 				
 				if (ended == true) {
-					System.out.println("重新初始化遊戲");
+//					System.out.println("重新初始化遊戲");
 					for(int i=0;i<winner.length;i++){
 						winner[i]=0;
 					}
@@ -40,14 +40,14 @@ public class ticToe2 {
 							ground[all][alt] = notUsed;
 						}
 					}
-					System.out.println("重新決定誰先開始");
+//					System.out.println("重新決定誰先開始");
 					whoseTurn = (int) (Math.random() * 3);
 					turnCounter = 0;
 					ended = false;
 				}
 				
 				
-				System.out.println("輸入任何字元繼續");
+				System.out.println("\n輸入任何字元繼續");
 				bfr.readLine();
 
 				// 展示遊戲場
@@ -153,20 +153,21 @@ public class ticToe2 {
 				for(int i :winner){
 					switch(i){
 					case 39:
-						System.out.println("遊戲結束，Player1獲勝");
+						System.out.println("\n遊戲結束，Player1獲勝");
 						ended=true;break;
 					case 21:
-						System.out.println("遊戲結束，Player2獲勝");
+						System.out.println("\n遊戲結束，Player2獲勝");
 						ended=true;break;
 					
 					}
 				}
 				//讀出陣列元素順便初始化，邏輯檢查用
-//				for(int p=0;p<winner.length;p++){
+				for(int p=0;p<winner.length;p++){
+//					下面那行是人類檢查用
 //					System.out.println("winner 陣列 元素邊號 "+p+"  :"+ winner[p]);
-//					winner[p]=0;
-//					
-//				}
+					winner[p]=0;
+					
+				}
 				
 
 			} catch (Exception e) {
