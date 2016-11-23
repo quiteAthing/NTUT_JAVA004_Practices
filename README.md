@@ -1,7 +1,5 @@
 # NTUT_JAVA004_Practices
 
-專案內容物
-
 somthing\Tictoe.java
 
 用Console完圈圈叉叉的小遊戲。第一版，Bug很多，勝負的判斷式有問題。
