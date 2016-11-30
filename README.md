@@ -1,4 +1,4 @@
-# NTUT_JAVA004_Practices#
+se# NTUT_JAVA004_Practices#
 
 ##練習專案  
 
@@ -29,3 +29,6 @@
 guessingNum的改版，增加了介面跟抽象類別的類型。可以透過繼承抽象類別或介面來達成介面化。
 在接近完全不更動主程式碼的狀況下更新遊戲內容。
 
+##fileIOtest    
+
+讀入檔案的練習。在讀入示範的someINI.ini之後會另存一個檔案到 someINI裡 DefaultSaveLocation 指示的位置。
