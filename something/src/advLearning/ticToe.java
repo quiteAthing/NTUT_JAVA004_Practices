@@ -12,7 +12,7 @@ public class ticToe {
 		int whoseTurn = 0;
 		boolean ended = false;
 		int[][] ground = new int[3][3];
-		int recordMark=0;
+		int recordMark = 0;
 
 		// 初始化遊戲場，
 		for (int all = 0; all < ground.length; all++) {
@@ -31,7 +31,7 @@ public class ticToe {
 				System.out.println("輸入任何字元繼續");
 				bfr.readLine();
 
-				//展示遊戲場
+				// 展示遊戲場
 				for (int all = 0; all < ground.length; all++) {
 					System.out.println("");
 					for (int alt = 0; alt < ground[all].length; alt++) {
@@ -60,7 +60,7 @@ public class ticToe {
 				} else {
 					System.out.println("\n 第  " + turnCounter + " 回合");
 				}
-				
+
 				switch (whoseTurn) {
 				case player1:
 					System.out.println("\n ============Player 1 的回合==========");
@@ -110,7 +110,7 @@ public class ticToe {
 						if (ground[i][in] == ground[i][in + 1] & ground[i][in] != notUsed
 								& ground[i][in + 1] != notUsed) {
 							win += 1;
-							//System.out.println("橫" + win);
+							// System.out.println("橫" + win);
 							if (win >= 3) {
 								switch (whoseTurn) {
 
@@ -140,7 +140,7 @@ public class ticToe {
 						if (ground[in][i] == ground[in + 1][i] & ground[in + 1][i] != notUsed
 								& ground[in][i] != notUsed) {
 							win += 1;
-							//System.out.println("直" + win);
+							// System.out.println("直" + win);
 							if (win >= 2) {
 								switch (whoseTurn) {
 
@@ -216,21 +216,23 @@ public class ticToe {
 					}
 
 				}
-				
-				recordMark=0;
-				for(int[] i :ground){
-					for(int io : i){
-						if(io!=notUsed){
-							recordMark+=1;
+
+				recordMark = 0;
+				for (int[] i : ground) {
+					for (int io : i) {
+						if (io != notUsed) {
+							recordMark += 1;
 						}
-						
+
 					}
 				}
-				if(recordMark>=9){
+				if (recordMark >= 9) {
 					System.out.println("空位已滿，遊戲結束，雙方平手");
-					ended=true;
-					recordMark=0;
-				}else{System.out.println("空位未滿，遊戲繼續");}
+					ended = true;
+					recordMark = 0;
+				} else {
+					System.out.println("空位未滿，遊戲繼續");
+				}
 
 			} catch (Exception e) {
 				System.out.println(e);
